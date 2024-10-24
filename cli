@@ -21,6 +21,11 @@ Program
     "used instead"
   ].join("\n" + optionIndention))
 
+  .option("--only-use-source [only-use-source]", [
+    "Only use the source directory, don't create a new, temporary project",
+    "Defaults to \"false\""
+  ].join("\n" + optionIndention))
+
   .option("-d, --destination [destination-file]", [
     "The path for the bundled module. Defaults to \"node_modules/meteor-client.js\""
   ].join("\n" + optionIndention))
